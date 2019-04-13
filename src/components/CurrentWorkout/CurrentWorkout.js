@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import Clock from "../Clock/Clock";
+
 
 class CurrentWorkout extends Component {
   render(){
     console.log(this.props)
     return(
       <div>
-        <h1>{this.props.data.name}</h1>
-        <h1>{this.props.data.time}</h1>
+        <Clock time={this.props.data.time}/>
       </div>
     )
   }

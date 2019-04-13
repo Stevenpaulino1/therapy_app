@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import "./WorkoutContainer.css";
 import WorkoutTodayCard from "../components/WorkoutTodayCard/WorkoutTodayCard";
-import Clock from "../components/Clock/Clock";
 
 class WorkoutContainer extends Component {
   // time will in sec
   // weight will be in lb
   state = {
     workoutTodayList: [
-      { name: "Stationary Bike", id: 1, time: 120 },
+      { name: "Stationary Bike", id: 1, time: 1200000 },
       {
         name: "Side Plank Abduction Right",
         id: 2,
@@ -41,10 +40,7 @@ class WorkoutContainer extends Component {
 
   render() {
     return (
-      <div>
-        <div className="posts">{this.workoutTile()}</div>
-        <Clock />
-      </div>
+      <div className="posts">{this.workoutTile()}</div>
     );
   }
 }

@@ -12,10 +12,11 @@ class Clock extends Component {
   };
 
   render() {
+    //console.log(this.props.time)
     return (
       <div>
         {this.state.clicked ? (
-          <Countdown date={Date.now() + 5000} />
+          <Countdown date={Date.now() + this.props.time} />
         ) : (
           <button onClick={this.startClock}>Start the Clock!</button>
         )}
