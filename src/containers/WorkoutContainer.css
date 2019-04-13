@@ -1,0 +1,6 @@
+.posts{
+  display: flex,run-in;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto
+}
