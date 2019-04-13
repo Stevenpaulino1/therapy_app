@@ -13,14 +13,10 @@ class WorkoutContainer extends Component {
     ]
   };
 
-  handleUrlChange = (id) => {
-    console.log(id)
-    //key.history.push(`/${props.key}`)
-  }
 
   workoutTile = () => {
   return this.state.workoutTodayList.map((workout, i) =>{
-      return(  <WorkoutTodayCard key={i} id={i+1} workout={workout} handleUrlChange={this.handleUrlChange}/>
+      return(  <WorkoutTodayCard key={i} id={i+1} workout={workout} handleUrlChange={this.props.handleUrlChange}/>
       )
     });
   };

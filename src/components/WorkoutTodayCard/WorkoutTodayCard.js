@@ -2,10 +2,10 @@ import React from 'react';
 import './WorkoutTodayCard.css';
 
 const WorkoutTodayCard = (props) => {
-  console.log(props)
+  //console.log(props)
   return(
-    <div className="card">
-        <h1 className="name" onClick={() => props.handleUrlChange(props.id)}>{props.workout.name}</h1>
+    <div className="card" onClick={() => props.handleUrlChange(props)}>
+        <h1 className="name">{props.workout.name}</h1>
     </div>
   )
 
