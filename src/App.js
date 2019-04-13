@@ -8,27 +8,34 @@ import {Route, Switch } from "react-router-dom"
 
 class App extends Component {
   state = {
-    current: ''
+    current: '',
+    show: true
   }
 
   handleUrlChange = (obj) => {
-    console.log(obj)
+    //console.log(obj)
     this.setState(() => {
-      return {current: obj}
+      return {current: obj, show: false}
     })
   }
 
   render() {
-    console.log(this.state, "app state")
-    return (
-      <div className="app">
-        <Toolbar />
-        <Switch>
-          <Route exact path='/' render={() => <WorkoutContainer handleUrlChange={this.handleUrlChange}/>} />
-          <Route exact path='/workouts/:id' render={() => <CurrentWorkout {...this.state.current} />} />
-        </Switch>
-      </div>
-    );
+    //console.log(this.state, "app state")
+    if(this.state.show){
+      return(
+        <div className="app">
+          <Toolbar />
+          <WorkoutContainer handleUrlChange={this.handleUrlChange}/>
+        </div>
+      )
+    } else {
+      return(
+        <div className="app">
+          <Toolbar />
+          <CurrentWorkout data={this.state.current.workout} />
+        </div>
+      )
+    }
   }
 }
 

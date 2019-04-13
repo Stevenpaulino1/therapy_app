@@ -8,19 +8,30 @@ class WorkoutContainer extends Component {
   // weight will be in lb
   state = {
     workoutTodayList: [
-      { name: "Stationary Bike", time: 120 },
-      { name: "Side Plank Abduction Right", sets: 3, reps: 10, band: "yellow" },
-      { name: "20ft Band Walks", sets: 3, band: "blue", misc: "around ankles" },
-      { name: "Squat", reps: 10, sets: 3, weight: 20 }
+      { name: "Stationary Bike", id: 1, time: 120 },
+      {
+        name: "Side Plank Abduction Right",
+        id: 2,
+        sets: 3,
+        reps: 10,
+        band: "yellow"
+      },
+      {
+        name: "20ft Band Walks",
+        sets: 3,
+        id: 3,
+        band: "blue",
+        misc: "around ankles"
+      },
+      { name: "Squat", reps: 10, sets: 3, id: 4, weight: 20 }
     ]
   };
 
   workoutTile = () => {
-    return this.state.workoutTodayList.map((workout, i) => {
+    return this.state.workoutTodayList.map(workout => {
       return (
         <WorkoutTodayCard
-          key={i}
-          id={i + 1}
+          key={workout.id}
           workout={workout}
           handleUrlChange={this.props.handleUrlChange}
         />
