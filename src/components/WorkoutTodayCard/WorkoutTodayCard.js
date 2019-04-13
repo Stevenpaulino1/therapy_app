@@ -7,7 +7,6 @@ const WorkoutTodayCard = (props) => {
   return(
     <div className="card">
         <h1 className="name">{props.workout.name}</h1>
-
     </div>
   )
 

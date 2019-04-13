@@ -1,5 +1,5 @@
 .posts{
-  display: flex,run-in;
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin: auto

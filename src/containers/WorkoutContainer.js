@@ -14,9 +14,9 @@ class WorkoutContainer extends Component {
   };
 
    workoutTile = () => {
-  return this.state.workoutTodayList.map(workout =>{
+  return this.state.workoutTodayList.map((workout, i) =>{
 
-      return(  <WorkoutTodayCard workout={workout} />
+      return(  <WorkoutTodayCard key={i} workout={workout} />
       )
     });
   };
@@ -24,9 +24,8 @@ class WorkoutContainer extends Component {
   render(){
 
     return (
-      <div >
-        <h1>Work out for today</h1>
-        <section className="posts">{this.workoutTile()}</section>
+      <div className="posts">
+          {this.workoutTile()}
       </div>
     )
   }
