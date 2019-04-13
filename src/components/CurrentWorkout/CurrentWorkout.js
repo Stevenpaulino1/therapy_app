@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
 
-const CurrentWorkout = (props) => {
-  return(<h1>Test</h1>);
+class CurrentWorkout extends Component {
+  render(){
+    console.log(this.props)
+    return(
+      <div>
+        <h1>{this.props.data.name}</h1>
+        <h1>{this.props.data.time}</h1>
+      </div>
+    )
+  }
 }
+
 
 export default CurrentWorkout;
