@@ -13,10 +13,14 @@ class WorkoutContainer extends Component {
     ]
   };
 
-   workoutTile = () => {
-  return this.state.workoutTodayList.map((workout, i) =>{
+  handleUrlChange = (id) => {
+    console.log(id)
+    //key.history.push(`/${props.key}`)
+  }
 
-      return(  <WorkoutTodayCard key={i} workout={workout} />
+  workoutTile = () => {
+  return this.state.workoutTodayList.map((workout, i) =>{
+      return(  <WorkoutTodayCard key={i} id={i+1} workout={workout} handleUrlChange={this.handleUrlChange}/>
       )
     });
   };

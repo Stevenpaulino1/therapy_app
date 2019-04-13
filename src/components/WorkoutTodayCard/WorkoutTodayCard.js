@@ -3,10 +3,9 @@ import './WorkoutTodayCard.css';
 
 const WorkoutTodayCard = (props) => {
   console.log(props)
-
   return(
     <div className="card">
-        <h1 className="name">{props.workout.name}</h1>
+        <h1 className="name" onClick={() => props.handleUrlChange(props.id)}>{props.workout.name}</h1>
     </div>
   )
 
