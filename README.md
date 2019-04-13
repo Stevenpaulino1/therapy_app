@@ -1,68 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![PT TIME](images/pt.jpg)<br>
 
-## Available Scripts
+# PT Time
 
-In the project directory, you can run:
+Mission: To connect Physical Therapists and Patients together in rural areas. Allows Physical Therapists to better track patients progress with at home exercises. Video chat and messaging enabled.
 
-### `npm start`
+PT Time enables patients to stay on track with their therapy and see their progress on the dashboard.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `npm test`
+### Thing we'll need
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js installed(also installs npm)
 
-### `npm run build`
+You can download Node.js by following this link and follow their instructions on the site
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://nodejs.org/en/
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Once Node.js is installed you can verify if its installed by entering this in your terminal
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+node --version && npm --version
 
-### `npm run eject`
+### Installing dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Dependecies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- mongoose
+- express
+- validator
+- bcryptjs
+- express
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To install dependencies, type the following command in your terminal<br/>
+_note: make sure you're in the correct directory_```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+npm install
 
-## Learn More
+### How to run
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Once you've got your packages installed you're ready to track your progress!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To start the application, enter this in your terminal _ Make sure you're in the src folder _
 
-### Code Splitting
+nodemon index.js
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Built With
 
-### Analyzing the Bundle Size
+- [Request](https://www.npmjs.com/package/request) - Simplified HTTP client
+- [Mongoose](https://www.npmjs.com/package/mongoose) - Connect to server and create schemas
+- [Validator](https://www.npmjs.com/package/validator) - Validates Data
+- [Bcrypt](https://www.npmjs.com/package/bcryptjs) - Hashes password for security
+- [Express](http://expressjs.com/) - Web App Framwork
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Thank you
 
-### Making a Progressive Web App
+Thank you for the opportunity to take this code challenge!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+nodejs.org
+Node.js
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
