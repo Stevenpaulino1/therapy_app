@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Countdown from "react-countdown-now";
+import "./Clock.css";
 
 class Clock extends Component {
   state = {
@@ -14,11 +15,13 @@ class Clock extends Component {
   render() {
     //console.log(this.props.time)
     return (
-      <div>
+      <div className="div1">
         {this.state.clicked ? (
           <Countdown date={Date.now() + this.props.time} />
         ) : (
-          <button onClick={this.startClock}>Start the Clock!</button>
+          <button className="button" onClick={this.startClock}>
+            Start the Clock!
+          </button>
         )}
         <span>You are good to go!</span>
       </div>
