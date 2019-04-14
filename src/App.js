@@ -3,7 +3,7 @@ import "./App.css";
 import WorkoutContainer from "./containers/WorkoutContainer";
 import CurrentWorkout from "./components/CurrentWorkout/CurrentWorkout";
 import Toolbar from "./components/Toolbar/Toolbar";
-import Particles from "react-particles-js";
+import Particles from 'react-particles-js';
 import WorkoutTodayCard from "./components/WorkoutTodayCard/WorkoutTodayCard";
 import { Route, Switch } from "react-router-dom";
 
@@ -17,7 +17,7 @@ const particlesOption = {
       }
     }
   }
-};
+}
 
 class App extends Component {
   state = {
@@ -37,7 +37,7 @@ class App extends Component {
     if (this.state.show) {
       return (
         <div className="app">
-          <Particles className="particles" params={particlesOption} />
+          <Particles className='particles' params={particlesOption} />
           <Toolbar />
           <WorkoutContainer handleUrlChange={this.handleUrlChange} />
         </div>
@@ -45,7 +45,7 @@ class App extends Component {
     } else {
       return (
         <div className="app">
-          <Particles className="particles" params={particlesOption} />
+          <Particles className='particles' params={particlesOption} />
           <Toolbar />
           <CurrentWorkout data={this.state.current.workout} />
         </div>
