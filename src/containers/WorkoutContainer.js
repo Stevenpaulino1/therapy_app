@@ -7,7 +7,7 @@ class WorkoutContainer extends Component {
   // weight will be in lb
   state = {
     workoutTodayList: [
-      { name: "Stationary Bike", id: 1, time: 1200000 },
+      { name: "Stationary Bike", id: 1, time: 1200 },
       {
         name: "Side Plank Abduction Right",
         id: 2,
@@ -39,9 +39,7 @@ class WorkoutContainer extends Component {
   };
 
   render() {
-    return (
-      <div className="posts">{this.workoutTile()}</div>
-    );
+    return <div className="posts">{this.workoutTile()}</div>;
   }
 }
 

@@ -11,6 +11,9 @@ class Toolbar extends Component {
         <a className="lBlock" href="#signUp">
           Sign Up
         </a>
+        <a className="lBlock" href="#signUp">
+          About
+        </a>
         <a className="rBlock" href="#login">
           Login
         </a>

@@ -5,7 +5,15 @@
 }
 
 /* Style the links inside the navigation bar */
-.topnav .lBlock{
+.topnav .lBlock {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav .lBlock {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -31,6 +39,6 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
